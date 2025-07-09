@@ -7,6 +7,7 @@
 </head>
 <body>
     <img src="./logo.png" alt="Aviation Club logo">
+    <form action="Register.php" method="post">
     <h2>
          Aviation Club 
         </h2>
@@ -26,9 +27,55 @@
 </div>
 <div>
     <label> Academic Year </label>
-    <input type="date" required>
+    <select name="Academic Year" required>
+        <option value="" selected disabled >Academic Year</option>
+        <option value="1">Freshman</option>
+        <option value="2">Sophomore</option>
+        <option value="3">Junior</option>
+        <option value="4">Senior 1</option>
+        <option value="5">Senior 2</option>
+    </select>
 </div>
-    
-    
+<div>
+    <label> Department </label>
+    <select required>
+        <option value="" selected disabled >Department</option>
+        <option value="1">Electrical</option>
+        <option value="2">Mechanical</option>
+        <option value="3">Architecture</option>
+        <option value="4">Civil</option>
+        
+    </select>
+</div> 
+<div>
+    <label> First Prefrence </label>
+    <select  required>
+        <option value="" selected disabled >First Prefrence</option>
+        <option value="1">Arduino</option>
+        <option value="2">Embedded</option>
+        <option value="3">Web Development</option>
+        <option value="4">Revit</option>
+        <option value="5">Solid Works</option>
+        <option value="6">Automotive</option>
+        <option value="7">Knx</option>
+    </select>
+</div>
+ 
+<div>
+    <label> Second Prefrence </label>
+    <select  required>
+        <option value="" selected disabled>Second Prefrence</option>
+        <option value="1">Arduino</option>
+        <option value="2">Embedded</option>
+        <option value="3">Web Development</option>
+        <option value="4">Revit</option>
+        <option value="5">Solid Works</option>
+        <option value="6">Automotive</option>
+        <option value="7">Knx</option>
+        
+    </select>
+</div>
+<input type="submit" value="Submit">
+    </form>
 </body>
 </html>
